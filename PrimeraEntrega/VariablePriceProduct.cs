@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,12 +22,12 @@ namespace PrimeraEntrega
         public override string ToString()
         {
             return
-                $"{Id}  {Description}" +
-                $"\n\t Measurement: {Measurement}"+
-                $"\n\t Quantity: {Quantity:F2}" +
-                $"\n\tPrice: {Price:C2} " +
-                $"\n\tTax: {Tax.ToString("0.00%")}"+
-                $"\n\t Value To Pay: {ValueToPay():C2}" 
+                $"  {Id}  {Description}" +
+                $"\n\tMeasurement: {Measurement}"+
+                $"\n\tQuantity...: {$"{Quantity:F2}",11}" +
+                $"\n\tPrice......: {$"{Price:C2}",8}" +
+                $"\n\tTax........: {$"{Tax.ToString("0.00%")}",12}"+
+                $"\n\tValue......: {ValueToPay():C2}" 
    
                 ;
          
@@ -35,3 +35,4 @@ namespace PrimeraEntrega
 
     }
 }
+
