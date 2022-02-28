@@ -1,4 +1,4 @@
-﻿namespace PrimeraEntrega
+namespace PrimeraEntrega
 {
     public abstract class Product
     {
@@ -22,12 +22,9 @@
 
         public override string ToString()
         {
-            return $"{Id}  {Description}" +
-                $"\n\tPrice: {Price:C2} " +
-                $"\n\tTax: {Tax.ToString("0.00%")}" 
-               
-
-                ;
+            return $"  {Id}  {Description}" +
+                $"\n\tPrice......: {$"{Price:C2}",10}" +
+                $"\n\tTax........: {$"{Tax.ToString("0.00%")}",12}";
         }
 
     }
