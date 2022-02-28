@@ -28,5 +28,13 @@
       <FileName>VariablePriceProduct.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="PrimeraEntrega.Invoice">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAASAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

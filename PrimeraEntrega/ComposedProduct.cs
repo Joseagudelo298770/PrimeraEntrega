@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace PrimeraEntrega
 {
     public class ComposedProduct : Product
@@ -13,17 +8,39 @@ namespace PrimeraEntrega
 
         public float Discount { get; set; }
 
-        public int Products { get; set; }
+        public List<Product> Products { get; set; } 
+
+    
         public override decimal ValueToPay()
+            
         {
-            return Price * (decimal)Discount;
+            decimal accumulatedvalue = 0;
+
+            foreach (Product Products in Products)
+            
+            accumulatedvalue  += Products.ValueToPay();
+
+            
+
+            return accumulatedvalue - accumulatedvalue * (decimal)Discount;
         }
+
+        
         public override string ToString()
         {
-            return $"Description:{Description}\n+" +
-                $"Discount: {Discount}\n" +
-                $"Id: {Id}";
+            String message= "";
+            foreach (Product products in Products)
+            message  += products.Description+", ";
+
+            return $"  {Id}  {Description}" +
+
+                $"\n\tProducts...:  {message} "+
+                $"\n\tDiscount...: {$"{Discount:P2}",13}" +
+                $"\n\tValue......: {ValueToPay():C2}";
         }
 
     }
 }
+
+
+
