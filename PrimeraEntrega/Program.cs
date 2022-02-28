@@ -1,4 +1,4 @@
-﻿
+
 using PrimeraEntrega;
 
 Console.WriteLine("PRODUCTS");
@@ -52,6 +52,13 @@ Console.WriteLine(product2);
 Console.WriteLine(product3);
 Console.WriteLine(product4);
 Console.WriteLine(product5);
+
+Invoice invoice = new Invoice();
+invoice.AddProduct(product1);
+invoice.AddProduct(product3);
+invoice.AddProduct(product5);
+Console.WriteLine(invoice);
+
 
 
 Invoice invoice = new Invoice();

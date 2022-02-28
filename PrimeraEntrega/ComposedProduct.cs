@@ -1,4 +1,4 @@
-﻿
+
 namespace PrimeraEntrega
 {
     public class ComposedProduct : Product

@@ -1,4 +1,4 @@
-﻿namespace PrimeraEntrega
+namespace PrimeraEntrega
 {
     public abstract class Product
     {
