@@ -1,10 +1,9 @@
-﻿namespace PrimeraEntrega
-{
-    internal interface IPay
 
+namespace PrimeraEntrega
+{
+    public interface IPay
 
     {
-
-
+        public decimal ValueToPay();
     }
 }
